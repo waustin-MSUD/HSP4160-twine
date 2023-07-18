@@ -710,6 +710,14 @@ footer i:hover {
   letter-spacing: 1px;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+}
+
 #ui-overlay {
   visibility: hidden;
   opacity: 0;
@@ -1273,9 +1281,11 @@ Setting.addList("theme", {
 // notify.min.js, for SugarCube 2, by Chapel
 // v1.1.1, 2021-04-20, 53d1a20e9321b3782a303cf7dbe00f5c51e947db
 ;!function(){var s=/\d+m?s$/;function e(s,e,t){"string"==typeof s&&("number"!=typeof e&&(e=!1),$(document).trigger({type:":notify",message:s,delay:e,class:t||""}))}$(document.body).append("<div id='notify'></div>"),$(document).on(":notify",(function(s){s.message&&"string"==typeof s.message&&(s.message.trim(),s.class?"string"==typeof s.class?s.class="open macro-notify "+s.class:Array.isArray(s.class)?s.class="open macro-notify "+s.class.join(" "):s.class="open macro-notify":s.class="open macro-notify",s.delay?("number"!=typeof s.delay&&(s.delay=Number(s.delay)),Number.isNaN(s.delay)&&(s.delay=2e3)):s.delay=2e3,$("#notify").empty().wiki(s.message).addClass(s.class),setTimeout((function(){$("#notify").removeClass()}),s.delay))})),Macro.add("notify",{tags:null,handler:function(){var t=this.payload[0].contents,a=!1,n=!1;if(this.args.length>0){var i=s.test(this.args[0]);"number"==typeof this.args[0]||i?(a=i?Util.fromCssTime(this.args[0]):this.args[0],n=this.args.length>1&&this.args.slice(1).flatten()):n=this.args.flatten().join(" ")}e(t,a,n)}}),setup.notify=e}();
-// end notify.min.js</script><tw-tag name="don&#39;t-edit" color="red"></tw-tag><tw-tag name="edit" color="green"></tw-tag><tw-tag name="maybe-don&#39;t-change" color="blue"></tw-tag><tw-tag name="ui" color="blue"></tw-tag><tw-tag name="widget" color="red"></tw-tag><tw-passagedata pid="1" name="A1" tags="" position="150,0" size="100,100">Lourdes is a young Latina girl who lives with her mother and father in Curtis Park. When she was five years old, her father walked out. Sometimes she would see him in the neighborhood, but each time he would walk the other way pretending not to see her.  
+// end notify.min.js</script><tw-tag name="don&#39;t-edit" color="red"></tw-tag><tw-tag name="edit" color="green"></tw-tag><tw-tag name="maybe-don&#39;t-change" color="blue"></tw-tag><tw-tag name="ui" color="blue"></tw-tag><tw-tag name="widget" color="red"></tw-tag><tw-passagedata pid="1" name="A1" tags="" position="150,0" size="100,100">&lt;img src=&quot;images/IMG-7622.png&quot; alt=&quot;Lourdes, a young Latina woman&quot;&gt;
+Lourdes is a young Latina girl who lives with her mother and father in Curtis Park. When she was five years old, her father walked out. Sometimes she would see him in the neighborhood, but each time he would walk the other way pretending not to see her.  
 
-[[Begin|A2]]</tw-passagedata><tw-passagedata pid="2" name="A10" tags="" position="825,650" size="100,100">Lourdes runs away from home to stay with friends, couch surfing from house to house.
+[[Begin|A2]]</tw-passagedata><tw-passagedata pid="2" name="A10" tags="" position="825,650" size="100,100">&lt;img src=&quot;images/miru5727-an-old-couch-in-a-basement-as-a-pencil-drawing-with-su-6cab6dab-0328-4a49-ac7b-e3c04a163032.png&quot; alt=&quot;Lourdes couch surfs&quot;&gt;
+Lourdes runs away from home to stay with friends, couch surfing from house to house.
 
 What might Lourdes do after she runs away?
 
@@ -1283,19 +1293,22 @@ What might Lourdes do after she runs away?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes begins stealing to make ends meet.|A200]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes begins seling drugs to make ends meet.|A201]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="A100" tags="" position="150,400" size="100,100">Lourdes and her father fight more frequently and each fight progressively gets worse. He begins to take out his frustrations on her with abuse.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes begins seling drugs to make ends meet.|A201]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="A100" tags="" position="150,400" size="100,100">&lt;img src=&quot;images/IMG-2008.png&quot; alt=&quot;Lourdes crying&quot;&gt;
+Lourdes and her father fight more frequently and each fight progressively gets worse. He begins to take out his frustrations on her with abuse.
 
 How might she respond?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes returns to her mother|A202]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes runs away.|A10]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="A101" tags="" position="300,400" size="100,100">Lourdes and her father fight occasionally, but she builds a strong bond with her father. She grows up connected to both families; she learns to balance both households and she attends high school.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes runs away.|A10]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="A101" tags="" position="300,400" size="100,100">&lt;img src=&quot;images/iru5727-as-a-pencil-drawing-with-subtle-green-orange-and-gray-3b5d4205-aee4-4215-bcb3-8c5c391c66b4.png&quot; alt=&quot;Lourdes in high school&quot;&gt;
+Lourdes and her father fight occasionally, but she builds a strong bond with her father. She grows up connected to both families; she learns to balance both households and she attends high school.
 
 How might she move through her high school years?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes drops out and eventually runs away from home because she can&#39;t stand the rules being imposed upon her.|A10]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="A102" tags="" position="425,1100" size="100,100">Lourdes begins to search for a job while out with friends on 16th Street Mall. While on the Mall, she meets Tre, who is a cute guy in his 20&#39;s. He drives up in an Escalade and asks if she&#39;d stop to talk to him.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="A102" tags="" position="425,1100" size="100,100">&lt;img src=&quot;images/IMG-0874.png&quot; alt=&quot;Black Escalade&quot;&gt;
+Lourdes begins to search for a job while out with friends on 16th Street Mall. While on the Mall, she meets Tre, who is a cute guy in his 20&#39;s. He drives up in an Escalade and asks if she&#39;d stop to talk to him.
 
 What might happen next?
 
@@ -1303,13 +1316,15 @@ What might happen next?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes politely talks with him.|A13]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes plays shy.|A14]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="A103" tags="" position="150,1400" size="100,100">Lourdes begins college.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes plays shy.|A14]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="A103" tags="" position="150,1400" size="100,100">&lt;img src=&quot;images/IMG-4175.png&quot; alt=&quot;Lourdes and her son Aidan&quot;&gt;
+Lourdes begins college.
 
 What might Lourdes do once she starts college?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes drops out and begins to search for a job while out with friends on 16th Street Mall.|A102]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes meets the love of her life, Brian, during an English class. They become serious.|A104]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="A104" tags="" position="300,1400" size="100,100">Lourdes and Brian eventually have a family of their own and they move to Lakewood.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes meets the love of her life, Brian, during an English class. They become serious.|A104]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="A104" tags="" position="300,1400" size="100,100">&lt;img src=&quot;images/IMG-1454.png&quot; alt=&quot;Lourdes and her son Aidan&quot;&gt;
+Lourdes and Brian eventually have a family of their own and they move to Lakewood.
 
 Would you like to try again?
 
@@ -1321,7 +1336,8 @@ Would you like to try again?
 
 &lt;div class=&quot;choice&quot;&gt;[[Yes.|A19]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="A11" tags="" position="1550,500" size="100,100">Lourdes&#39; mother and stepfather both work late, and her brothers are in afterschool programs, so after class she regularly hangs out with friends at 16th St Mall. Walking back home one evening, a cute guy in his late twenties drives up in an Escalade and asks if she’d stop to talk to him.
+&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="A11" tags="" position="1550,500" size="100,100">&lt;img src=&quot;images/miru5727-a-cute-guy-who-is-a-person-of-color-standing-in-front-8d4559c2-60d6-4045-8ed7-4bff6833da4f.png&quot; alt=&quot;Cute guy in front of an Escalade&quot;&gt;
+Lourdes&#39; mother and stepfather both work late, and her brothers are in afterschool programs, so after class she regularly hangs out with friends at 16th St Mall. Walking back home one evening, a cute guy in his late twenties drives up in an Escalade and asks if she’d stop to talk to him.
 
 How might  Lourdes respond to this request?
 
@@ -1329,7 +1345,8 @@ How might  Lourdes respond to this request?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes politely talks with him.|A13]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes plays shy.|A14]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="A12" tags="" position="1200,700" size="100,100">Lourdes begins to walk back quickly to her friends on 16th St. Mall to get someone else to walk home with her.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes plays shy.|A14]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="A12" tags="" position="1200,700" size="100,100">&lt;img src=&quot;images/miru5727-a-young-woman-with-long-hair-with-her-back-turned-to-t-0278def8-67bd-4766-9387-042696d62862.png&quot; alt=&quot;Lourdes walking to her friends&quot;&gt;
+Lourdes begins to walk back quickly to her friends on 16th St. Mall to get someone else to walk home with her.
 
 Would you like to try again?
 
@@ -1381,7 +1398,8 @@ What might happen next for Lourdes?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes gives up dating and pours herself into high school activities.|A101]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Instead, Lourdes meets up with a young man named Enrique.|A105]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="A2" tags="" position="300,0" size="100,100">What might Lourdes do next?
+&lt;div class=&quot;choice&quot;&gt;[[Instead, Lourdes meets up with a young man named Enrique.|A105]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="A2" tags="" position="300,0" size="100,100">&lt;img src=&quot;images/IMG-9578.png” alt=&quot;Frank, the father of Lourdes&quot;&gt;
+What might Lourdes do next?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes persistently approaches her father and eventually develops a relationship with him where she sees him regularly.|A3]]&lt;/div&gt;
 
@@ -1395,7 +1413,8 @@ What might happen next for Lourdes?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes’ parents become irate at their relationship and forbid them to see each other.|A22]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes stays out later and later, and eventually she stops going home.|A23]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="A200" tags="" position="1400,500" size="100,100">Lourdes is arrested and put into juvenile detention.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes stays out later and later, and eventually she stops going home.|A23]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="A200" tags="" position="1400,500" size="100,100">&lt;img src=&quot;images/miru5727-The-denver-junvenile-detention-center-as-a-pencil-draw-1a5098fa-f5fb-4d26-847b-f10496691f79.png&quot; alt=&quot;Lourdes in Juvenile Detention&quot;&gt;
+Lourdes is arrested and put into juvenile detention.
 
 What might she do?
 
@@ -1407,7 +1426,8 @@ What might she do?
 
 &lt;div class=&quot;choice&quot;&gt;[[After a bad stint, she pledges to get clean.|A203]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes goes to rehab for a short period of time.|A204]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="A202" tags="" position="1200,200" size="100,100">Lourdes returns home to her mother
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes goes to rehab for a short period of time.|A204]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="A202" tags="" position="1200,200" size="100,100">&lt;img src=&quot;images/miru5727-as-a-pencil-sketch-with-orange-green-and-gray-tones-si-a14eed5c-2c88-46da-8e77-7ebc4b13a1b5.png&quot; alt=&quot;Lourdes moves in with her mom&quot;&gt;
+Lourdes returns home to her mother
 
 What might she do?
 
@@ -1477,7 +1497,8 @@ How might Lourdes respond to this suggestion?
 Would you like to try again?
 
 &lt;div class=&quot;choice&quot;&gt;[[Yes.|A28]]&lt;/div&gt;
-&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="A3" tags="" position="200,150" size="100,100">Lourdes&#39; relationship with her father flourishes, and they maintain a separate but polite relationship into Lourdes’ adulthood. Lourdes and her father fight occasionally, but she builds a strong bond with her father
+&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="A3" tags="" position="200,150" size="100,100">&lt;img src=&quot;images/IMG-9765.png&quot; alt=&quot;Girl in a jacket&quot;&gt;
+Lourdes&#39; relationship with her father flourishes, and they maintain a separate but polite relationship into Lourdes’ adulthood. Lourdes and her father fight occasionally, but she builds a strong bond with her father
 
 How might this relationship proceed?
 
@@ -1523,13 +1544,15 @@ Would you like to try again?
 
 &lt;div class=&quot;choice&quot;&gt;[[Yes.|A32]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="A4" tags="" position="325,150" size="100,100">Lourdes maintains distance from her father and lives exclusively with her mother.
+&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="A4" tags="" position="325,150" size="100,100">&lt;img src=&quot;images/IMG-8776.png&quot; alt=&quot;Lourdes and her mom&quot;&gt;
+Lourdes maintains distance from her father and lives exclusively with her mother.
 
 Would you like to try again?
 
 &lt;div class=&quot;choice&quot;&gt;[[Yes.|A2]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="A5" tags="" position="450,150" size="100,100">Estranged from her biological father, Lourdes’ mother meets a new man whom she marries when Lourdes is 8 years old. They have two more children, Antonio and Roberto.
+&lt;div class=&quot;choice&quot;&gt;[[No.|F4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="A5" tags="" position="450,150" size="100,100">&lt;img src=&quot;images/IMG-0971.png&quot; alt=&quot;Lourdes&#39; brothers&quot;&gt;
+Estranged from her biological father, Lourdes’ mother meets a new man whom she marries when Lourdes is 8 years old. They have two more children, Antonio and Roberto.
 
 How might Lourdes respond as her family grows?
 
@@ -1537,19 +1560,22 @@ How might Lourdes respond as her family grows?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes begins to act out because of the special attention given to her brothers. As a result, she is given accommodations at school for her behavior.|A7]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Hearing her mother and stepfather&#39;s complaints about the responsibilities of a growing family, Lourdes begins to feel like she is in the way.|A8]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="A6" tags="" position="450,400" size="100,100">Because of all the time she spends helping  her brothers, Lourdes develops a close and loving relationship with her mother. She attends high school successfully. 
+&lt;div class=&quot;choice&quot;&gt;[[Hearing her mother and stepfather&#39;s complaints about the responsibilities of a growing family, Lourdes begins to feel like she is in the way.|A8]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="A6" tags="" position="450,400" size="100,100">&lt;img src=&quot;images/miru5727-a-high-school-with-lots-of-students-walking-about-as-a-b633b63a-15c6-4b46-889d-088857e5bb77.png&quot; alt=&quot;High school&quot;&gt;
+Because of all the time she spends helping  her brothers, Lourdes develops a close and loving relationship with her mother. She attends high school successfully. 
 
 How might she move through her high school years?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes drops out and eventually runs away from home because she can&#39;t stand the rules being imposed upon her.|A102]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="A7" tags="" position="575,400" size="100,100">During this time, Lourdes&#39; advisor, Mrs. Alexander, becomes her mentor who teaches her how to handle her stress. Mrs. Alexander becomes Lourdes&#39; outlet with whom she can share her frustrations. With time, Lourdes attends high school successfully.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="A7" tags="" position="575,400" size="100,100">&lt;img src=&quot;images/miru5727-a-kind-black-middle-aged-female-teacher-with-glasses-a-88a2aae2-9aae-48f6-9929-c3805c96a7fc.png&quot; alt=&quot;Mrs. Alexander&quot;&gt;
+During this time, Lourdes&#39; advisor, Mrs. Alexander, becomes her mentor who teaches her how to handle her stress. Mrs. Alexander becomes Lourdes&#39; outlet with whom she can share her frustrations. With time, Lourdes attends high school successfully.
 
 How might she move through her high school years?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes drops out and eventually runs away from home because she can&#39;t stand the rules being imposed upon her.|A102]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates.|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="A8" tags="" position="700,400" size="100,100">Lourdes suffers and has nowhere to turn. Her stepfather rarely pays attention to her and when he does, it he is often yelling at her for something she has done to her younger siblings. Lourdes looks a lot like her biological father and hears her mother complain about it a lot.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes graduates.|A103]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="A8" tags="" position="700,400" size="100,100">&lt;img src=&quot;images/miru5727-scowling-at-his-kids-as-a-pencil-drawing-with-subtle-g-5d68f007-3d5a-4088-ab85-b542e5f1a848.png&quot; alt=&quot;Lourdes&#39; dad&quot;&gt;
+Lourdes suffers and has nowhere to turn. Her stepfather rarely pays attention to her and when he does, it he is often yelling at her for something she has done to her younger siblings. Lourdes looks a lot like her biological father and hears her mother complain about it a lot.
 
 How might Lourdes respond to this type of attention given to her by her family?
 
@@ -1557,7 +1583,8 @@ How might Lourdes respond to this type of attention given to her by her family?
 
 &lt;div class=&quot;choice&quot;&gt;[[Lourdes blows up at her mother, screaming how insensitive she is.|A10]]&lt;/div&gt;
 
-&lt;div class=&quot;choice&quot;&gt;[[Lourdes starts to believe that she is not wanted or attractive. To compensate, she works hard to make the boys at school like her. As a result, her friends tease her a lot, and sometimes make her cry.|A11]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="A9" tags="" position="675,650" size="100,100">With the support of family therapy, they discuss the triggers that her mother experiences when Lourdes looks like her ex-husband.
+&lt;div class=&quot;choice&quot;&gt;[[Lourdes starts to believe that she is not wanted or attractive. To compensate, she works hard to make the boys at school like her. As a result, her friends tease her a lot, and sometimes make her cry.|A11]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="A9" tags="" position="675,650" size="100,100">&lt;img src=&quot;images/miru5727-as-a-pencil-drawing-with-a-smile-on-her-face-standing-e52454d2-0aca-4b59-a477-3f7617a39717.png&quot; alt=&quot;Lourdes after family therapy&quot;&gt;
+With the support of family therapy, they discuss the triggers that her mother experiences when Lourdes looks like her ex-husband.
 
 Would you like to try again?
 
@@ -1641,7 +1668,7 @@ Would you like to try again?
 
 &lt;/div&gt;
 
-&lt;div class=&quot;credit&quot;&gt;✦ Interface by &lt;a href=&quot;https://outoftheblue-if.tumblr.com&quot; target=&quot;_blank&quot;&gt;Vahnya&lt;/a&gt; ✦&lt;/div&gt;
+&lt;div class=&quot;credit&quot;&gt;✦ Interface adapted from work by &lt;a href=&quot;https://outoftheblue-if.tumblr.com&quot; target=&quot;_blank&quot;&gt;Vahnya&lt;/a&gt; ✦&lt;/div&gt;
 
 &lt;/div&gt; &lt;!-- header body end tag --&gt;
 &lt;/header&gt;
